@@ -13,6 +13,22 @@ package com.company;    //Remove this line
  * @author Laurie White
  * @version April 2012
  */
+
+//What happens when more than one keyword appears in a string? Consider the string “My mother has a dog but no cat.”
+// Explain how to prioritize responses in the reply method.
+
+    //If more than one keyword appears, the program will output the response corresponding to the first keyword. This is because the conditional
+    //statements will leave the if-else block after executing the code in that condition.
+    //For example, in "My mother has a dog but no cat", the program will print "Tell me more about your family." because "mother" is the first
+    //keyword that is identified. Since all the if, else if, and else statements are grouped together, program execution leaves that conditional
+    //block and proceeds to the rest of the program
+
+    //Question 1: What happens when a keyword is included in another word? Consider statements like “I know all the state capitals”
+//  and “I like vegetables smothered in cheese.” Explain the problem with the responses to these statements.
+
+    //I don't fully understand what the question is asking, but if the keyword is a substring of another word i.e. if you have "teach" as the keyword
+    //and "My teacher is nice" as the statement, the conditional statements detect "teach" in the statement and will print out an incorrect response
+
 public class Magpie2 {
 
     public String getGreeting() {
@@ -28,6 +44,8 @@ public class Magpie2 {
      */
     public String getResponse(String statement) {
         String response = "";
+        int trimLength = statement.trim().length(); //Get the length of the trimmed String
+
         if (statement.indexOf("No") >= 0 || (statement.indexOf(" no")) >= 0) {
             response = "Why so negative?";
         } else if (statement.indexOf("mother") >= 0
@@ -41,13 +59,13 @@ public class Magpie2 {
             response = "Great!";
         } else if (statement.indexOf("Hello") >= 0) {
             response = "Hello, how are you?";
-        } else if (statement.indexOf("Mr.Binz") >= 0) {
+        } else if (statement.indexOf("Mr. Binz") >= 0) {    //This is space sensitive, make sure to include the space character
             response = "He sounds like a great teacher!";
         } else if (statement.indexOf("pet") >= 0) {
             response = "What is your pet's name?";
-        } /*else if (statement.trim()) {
+        } else if (trimLength == 0) {   //Compare the length of the trimmed string
             response = "Say something, please.";
-        }*/ else {
+        } else {
             response = getRandomResponse();
         }
 

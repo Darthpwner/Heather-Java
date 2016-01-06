@@ -15,15 +15,17 @@ public class MagpieRunner2 {
     {
         Magpie2 maggie = new Magpie2();
 
-        System.out.println (maggie.getGreeting());
+        System.out.println (maggie.getGreeting());  //Prints "Hello let's talk"
         Scanner in = new Scanner (System.in);
-        String statement = in.nextLine();
+        String statement = in.nextLine();   //There is a problem in scanning
 
         while (!statement.equals("Bye"))
         {
             System.out.println (maggie.getResponse(statement));
             statement = in.nextLine();
         }
+
+        System.out.println("Hi");
     }
 
 }
