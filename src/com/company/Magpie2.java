@@ -1,5 +1,4 @@
-//package magpie;   //Uncomment this line
-package com.company;    //Remove this line
+package magpie;   //Uncomment this line
 
 /**
  * A program to carry on conversations with a human user.
@@ -32,6 +31,7 @@ package com.company;    //Remove this line
     //and "My teacher is nice" as the statement, the conditional statements detect "teach" in the statement and will print out an incorrect response
 
 */
+    
 public class Magpie2 {
 
     public String getGreeting() {
