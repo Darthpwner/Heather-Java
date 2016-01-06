@@ -31,7 +31,7 @@ package magpie;   //Uncomment this line
     //and "My teacher is nice" as the statement, the conditional statements detect "teach" in the statement and will print out an incorrect response
 
 */
-    
+
 public class Magpie2 {
 
     public String getGreeting() {
@@ -83,7 +83,7 @@ public class Magpie2 {
     private String getRandomResponse() {
         final int NUMBER_OF_RESPONSES = 6;
         double r = Math.random();
-        int whichResponse = (int) (r * NUMBER_OF_RESPONSES);
+        int whichResponse = (int) (r % NUMBER_OF_RESPONSES);
         String response = "";
 
         if (whichResponse == 0) {
