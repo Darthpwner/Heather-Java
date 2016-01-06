@@ -1,4 +1,5 @@
-package magpie;   //Uncomment this line
+//package magpie;   //Uncomment this line
+package com.company;
 
 /**
  * A program to carry on conversations with a human user.
@@ -20,15 +21,15 @@ package magpie;   //Uncomment this line
 
     //If more than one keyword appears, the program will output the response corresponding to the first keyword. This is because the conditional
     //statements will leave the if-else block after executing the code in that condition.
-    //For example, in "My mother has a dog but no cat", the program will print "Tell me more about your family." because "mother" is the first
-    //keyword that is identified. Since all the if, else if, and else statements are grouped together, program execution leaves that conditional
+    //For example, in "My mother has a dog but no cat", the program will print "Why so negative?" because "no" is the first
+    //keyword that is checked AND identified. Since all the if, else if, and else statements are grouped together, program execution leaves that conditional
     //block and proceeds to the rest of the program
 
     //Question 1: What happens when a keyword is included in another word? Consider statements like “I know all the state capitals”
 //  and “I like vegetables smothered in cheese.” Explain the problem with the responses to these statements.
 
-    //I don't fully understand what the question is asking, but if the keyword is a substring of another word i.e. if you have "teach" as the keyword
-    //and "My teacher is nice" as the statement, the conditional statements detect "teach" in the statement and will print out an incorrect response
+    //I don't fully understand what the question is asking, but if the keyword is a substring of another word i.e. if you have "no" as the keyword
+    //and "I am not" as the statement, the conditional statements detect "no" in the statement and will print out an incorrect response
 
 */
 

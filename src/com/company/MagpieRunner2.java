@@ -15,6 +15,9 @@ public class MagpieRunner2 {
     {
         Magpie2 maggie = new Magpie2();
 
+        System.out.println(maggie.getResponse("My mother has a dog but no cat."));
+        System.out.println(maggie.getResponse("I am not hungry"));
+
         System.out.println (maggie.getGreeting());  //Prints "Hello let's talk"
         Scanner in = new Scanner (System.in);
         String statement = in.nextLine();   //There is a problem in scanning
