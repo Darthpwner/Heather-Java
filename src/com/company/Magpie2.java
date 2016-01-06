@@ -14,6 +14,8 @@ package com.company;    //Remove this line
  * @version April 2012
  */
 
+/* DELETE EVERYTHING IN THIS COMMENT!
+
 //What happens when more than one keyword appears in a string? Consider the string “My mother has a dog but no cat.”
 // Explain how to prioritize responses in the reply method.
 
@@ -29,6 +31,7 @@ package com.company;    //Remove this line
     //I don't fully understand what the question is asking, but if the keyword is a substring of another word i.e. if you have "teach" as the keyword
     //and "My teacher is nice" as the statement, the conditional statements detect "teach" in the statement and will print out an incorrect response
 
+*/
 public class Magpie2 {
 
     public String getGreeting() {
