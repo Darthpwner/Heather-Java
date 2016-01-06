@@ -1,5 +1,4 @@
-//package magpie;   //Uncomment this line
-package com.company;
+package magpie;
 
 /**
  * A program to carry on conversations with a human user.

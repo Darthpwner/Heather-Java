@@ -1,5 +1,4 @@
-//package magpie;   //Uncomment this line
-package com.company;    //Remove this line
+package magpie;
 import java.util.Scanner;
 
 /**
